@@ -106,6 +106,12 @@ class Modules
         $sidebar = [];
         $nested = $this->getNestedHierarchy($nodes);
         foreach ($nested as $nestedName => $nestedNodes) {
+            if (count(explode('/', $nestedNodes[0])) > 2) {
+                continue;
+            }
+            $getSidebar = $this->getSidebarFor(
+                $this->getTitle($nestedName),
+                $this->getNodesChildren($nestedNodes)
             );
             $sidebar[] = empty($getSidebar) ? 'auto' : $getSidebar;
         };
