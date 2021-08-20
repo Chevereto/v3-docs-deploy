@@ -1,9 +1,9 @@
-# DocsDeploy
+# docs-deploy
 
 ✨ Publishes a markdown documentation using [VuePress](https://vuepress.vuejs.org/).
 
 * One-click update and automatic deploy based on GitHub actions
-* Automatic **navbar** & **sidebar** generation
+* Automatic **nav** & **sidebar** generation
 * Easy to follow filesystem conventions
 
 ## Reference
