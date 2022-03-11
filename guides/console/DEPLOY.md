@@ -18,20 +18,20 @@ chmod +x deploy.sh
 
 ## Commands
 
-Run `yarn dev` to preview.
+### Dev
+
+Deploy to dev targeting documentation local dir:
 
 ```sh
-./deploy <mode=dev|prod> <resource=true|false>
+./deploy.sh dev dir ~/git/chevereto/v4-docs
 ```
 
-Deploy to dev re-sourcing documentation repo:
+Deploy to dev targeting documentation repo (in config file):
 
 ```sh
-./deploy dev true
+./deploy.sh dev repo
 ```
 
-Deploy to production re-sourcing documentation repo:
+### Production
 
-```sh
-./deploy prod true
-```
+Same as [dev](#dev) but change `dev` for `prod`.
